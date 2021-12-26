@@ -17,10 +17,10 @@ class MainController extends AbstractController
         ]);
     }
 
-    #[Route('/start/{name?}', name: 'start')]
-    public function start(Request $request, $name)
+    #[Route('/start/{test?}', name: 'start')]
+    public function start(Request $request, $test)
     {
-        return new Response('<h1>Willkommen '.$name.'</h1>');
+        return new Response('<h1>Willkommen '.$test.'</h1>');
     }
 
 
